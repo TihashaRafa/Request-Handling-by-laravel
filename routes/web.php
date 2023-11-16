@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonController;
 /*
@@ -26,3 +27,5 @@ Route::get("Personall/{name?}/account/{accountid}", [PersonController::class, "P
 
 Route::get("/persons", [PersonController::class,"create"]);
 Route::post("/persons", [PersonController::class,"CreatePerson"]);
+
+Route::post("/api/creare", [ApiController::class,"CreatePerson"]);
