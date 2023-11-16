@@ -12,7 +12,10 @@
 
     <h2>Name: {{$name}}</h2>
     <h2>Email: {{$email}}</h2>
+    @if($image)
     <h2>Image: {{$image}}</h2>
+    <img src="{{ asset('images/' .$image) }}" alt="image" width="600px" height="300px">
+    @endif
     
 </body>
 </html>
